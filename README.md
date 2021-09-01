@@ -28,16 +28,13 @@ In the file you can change the @TAG the scenario you want to run filling with on
 @HoffnerScenario03
 @HoffnerScenario04
 
-and run the HoffnerTest.java
+Verify on right corner, click on selection box and click on Edit Configuration.
 
-If you got an error, verify on right corner click on HoffnerTest and click on Edit Configuration.
-
-Verify if this is running with Junit, if not run it with Junit
-
-On Junit Configuration observe if the fields are like:
+Add a Junit test and on Junit Configuration observe if the fields are like:
 "Class" : krieger.steps.portabilidade.HoffnerTest
 "VM options:" -ea
 "Working directory:"$MODULE_WORKING_DIR$"
 "Use classpath of module:" = origination-crm-testes.test
 
+and run it with Junit
 
