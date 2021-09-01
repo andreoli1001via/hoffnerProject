@@ -1,7 +1,7 @@
 ### **Hoffner readme file**
 
 Software requirements:
-Java 11
+Java 1.8
 Intelijj
 
 Plugins:
@@ -15,8 +15,29 @@ Go to build - build project
 
 Go to file - settings - Build, Execution, Deployment - Build Tools - Gradle - put Run testes using Intellij IDEA
 
-Go to file KriegerTest.java and run it
+Go to file - Project Structure - modules - verify if you have a module > origination-crm-tests
 
-You should config Gradle on:
+If not add a module Gradle - Java with name origination-crm-tests
 
-On Intellij Go to File - Project Structure - 
+Go to file HoffnerTest.java and open it
+
+In the file you can change the @TAG the scenario you want to run filling with one of these below:
+
+@HoffnerScenario01
+@HoffnerScenario02
+@HoffnerScenario03
+@HoffnerScenario04
+
+and run the HoffnerTest.java
+
+If you got an error, verify on right corner click on HoffnerTest and click on Edit Configuration.
+
+Verify if this is running with Junit, if not run it with Junit
+
+On Junit Configuration observe if the fields are like:
+"Class" : krieger.steps.portabilidade.HoffnerTest
+"VM options:" -ea
+"Working directory:"$MODULE_WORKING_DIR$"
+"Use classpath of module:" = origination-crm-testes.test
+
+

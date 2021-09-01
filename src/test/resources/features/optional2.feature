@@ -5,12 +5,12 @@
   Scenario Outline: Order completed to pay on deliver
 
     Given a Hoffner page
-    When I open a page https://www.hoeffner.de/
-    And I accept the cookie popup
+    When I open a page www.hoeffner.de
+    And I accept cookie popup
     Then I can see the Search field
     When I enter my "<productName>" in the search field
     Then should be automatically displayed some similar goods on screen
-    When I click on the product <"productName"> I want to buy
+    When I click on the product I want to buy
     Then I can see the product page
     When I put my address code
     And I click on In den Warenkorb button

@@ -2,7 +2,7 @@
 
   @HoffnerScenario03
   Feature: Hoffner page email subscription
-  Scenario Outline: Subscription is in progress
+  Scenario Outline: Subscription is in progress with wrong email
     Given a Hoffner login page
     When I open a page
     And I accept the cookie popup

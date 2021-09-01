@@ -29,6 +29,7 @@ public class HoffnerStep {
     @Before(value = "@HoffnerScenario03")
     public void init03(){ this.driver = new TestBase().getDriver();    }
 
+
     @Given("a Hoffner login page")
     public void a_Hoffner_login_page() {
         log.info("Go to acess login page: " + getValue("urlkrieger") + " ***");
@@ -43,6 +44,13 @@ public class HoffnerStep {
     public void i_accept_popup() {
         HoffnerLoginPage hoffnerLoginPage = new HoffnerLoginPage(driver);
         hoffnerLoginPage.acceptCookies();
+    }
+
+    @When("I accept cookie popup")
+    public void i_accept_cookie_popup() {
+//        HoffnerLoginPage hoffnerLoginPage = new HoffnerLoginPage(driver);
+//        hoffnerLoginPage.acceptCookies();
+        System.out.println("to be discomented");
     }
 
     @Then("I can see a newsletter subscription input")
