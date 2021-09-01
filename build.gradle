@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
-//group 'br.com.agibank'
+
 group 'br.com.hoffner'
 version '1.0-SNAPSHOT'
 
@@ -78,7 +78,6 @@ task cucumber() {
             def tags = getProperty("tags")
             args = ['--plugin', 'pretty',
                     '--plugin', 'html:target/cucumber',
-//                    '--glue', 'br.com.agibank.originationcrm.steps', 'src/test/resources/features',
                     '--glue', 'hoffner.steps', 'src/test/resources/features',
                     '--tags', tags]
         }

@@ -26,9 +26,10 @@
     When I click on Zahlung bei Lieferung (Nachnahme) and click on Weiter button
     Then I can see Bitte überprüfen und bestätigen Sie Ihre Bestellung page
     And press the Jetzt kaufen button
+    Then the order is created
 
     Examples:
       | productName         |
-      | bratpfanne          |
+      |  Ecksofa          |
 
 
