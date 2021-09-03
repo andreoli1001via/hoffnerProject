@@ -4,12 +4,14 @@ Software requirements:
 Java 1.8
 Intelijj
 
-Plugins:
+Intelijj Plugins:
 Cucumber for java
 
 How to use:
 
 git clone git@github.com:andreoli1001via/kriegerdigital.git
+
+Open the project
 
 Go to build - build project
 
@@ -22,7 +24,6 @@ If not add a module Gradle - Java with name origination-crm-tests
 Go to file HoffnerTest.java and open it
 
 In the file you can change the @TAG the scenario you want to run filling with one of these below:
-
 @HoffnerScenario01
 @HoffnerScenario02
 @HoffnerScenario03
@@ -37,4 +38,3 @@ Add a Junit test and on Junit Configuration observe if the fields are like:
 "Use classpath of module:" = origination-crm-testes.test
 
 and run it with Junit
-

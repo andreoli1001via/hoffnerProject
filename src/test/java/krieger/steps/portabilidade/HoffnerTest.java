@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        tags = "@HoffnerScenario02",
+        tags = "@HoffnerScenario04",
         glue = {"/krieger/steps/portabilidade"},
         monochrome = true, dryRun = false,
         plugin = {"pretty", "com.epam.reportportal.cucumber.StepReporter", "html:target/cucumber"})
